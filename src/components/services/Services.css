@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Anglecia';
+    src: url('Anglecia Pro Display SemiBold.ttf') format('truetype'); 
+  }
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root{
+    --deepBlue: #1E1B28;
+    --blue1: #6397A3;
+    --blue2: #125D99;
+    --blue3: #67BFDB;
+    --blue4: #EDEEEF;
+    --blue5: rgb(7, 53, 90);
+    --blue6: #49a0bb;
+
+    /*--------TRANSPARENCIAS--------*/
+    --blue2T1: rgba(18, 93, 153,0.4);
+    --blue2T2: rgba(18, 93, 153,0.3);
+    --blue2T3: rgba(18, 93, 153,0.2);
+}
+
+.services{
+    position: relative ;
+    width: 100% ;
+    min-height: 100vh;
+}
+.serviceHeader{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Anglecia';
+    font-size: 30px;
+    width: 80%;
+    color: var(--blue5);
+}
+.servBx{
+    position: relative;
+    width: 90% ;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}

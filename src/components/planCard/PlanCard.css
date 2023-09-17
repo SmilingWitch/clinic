@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Anglecia';
+    src: url('Anglecia Pro Display SemiBold.ttf') format('truetype'); 
+  }
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root{
+    --deepBlue: #1E1B28;
+    --blue1: #6397A3;
+    --blue2: #125D99;
+    --blue3: #67BFDB;
+    --blue4: #EDEEEF;
+    --blue5: rgb(7, 53, 90);
+    --blue6: #49a0bb;
+
+    /*--------TRANSPARENCIAS--------*/
+    --blue2T1: rgba(18, 93, 153,0.4);
+    --blue2T2: rgba(18, 93, 153,0.3);
+    --blue2T3: rgba(18, 93, 153,0.2);
+    --blue3T1: rgba(103, 191, 219,0.1);
+}
+
+.plans{
+    position: relative;
+    width: 200px;
+    height: 250px ;
+    background: var(--blue4);
+    padding: 10px;
+    border-radius: 20px;
+}
+.plansName{
+    position: relative ;
+    font-family: 'Anglecia';
+    font-size: 20px;
+    text-align: center;
+    color: var(--blue5);
+    margin-top: 20px;
+}
+.iconPlans{
+    position: relative ;
+    color: var(--blue3);
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    border-radius: 50%;
+    background: white;
+}
+.plansText{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em;
+    color: var(--blue2);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.planBtn{
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+}

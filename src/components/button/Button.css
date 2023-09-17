@@ -1,0 +1,18 @@
+.btn{
+    position: relative;
+    padding: 10px ;
+    background: var(--blue6);
+    width: 100%;
+    border-radius: 10px;
+    font-size: 0.7em;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: 0.5s;
+    -webkit-box-shadow: -8px 7px 17px -8px rgba(73,160,187,1);
+    -moz-box-shadow: -8px 7px 17px -8px rgba(73,160,187,1);
+    box-shadow: -8px 7px 17px -8px rgba(73,160,187,1);
+}
+.btn:hover{
+    box-shadow: none;
+}

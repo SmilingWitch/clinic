@@ -24,8 +24,16 @@
 .app{
     position: relative;
     width: 100%;
-    min-height: 100vh;
-
+    height: 150vh;
+    background-image: url("./background.png");
+    background-size: cover;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 150vh;
+    background: rgba(255, 255, 255,0.4);
+    backdrop-filter: blur(90px);
 }
 .appGrid{
     position: relative;
@@ -98,29 +106,50 @@
     z-index: -1;
     border-radius:53% 47% 51% 49% / 21% 15% 85% 79%  ;
 }
-.circle4{
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    z-index: -1;
-    background: var(--blue1);
-    border-radius: 64% 36% 51% 49% / 60% 42% 58% 40%  ;
-}
-.circle5{
-    position: absolute;
-    width: 450px;
-    height: 400px;
-    z-index: -1;
-    background: var(--blue2T2);
-    border-radius: 46% 54% 26% 74% / 57% 42% 58% 43% ;
-}
 .planGrid{
     position: relative;
-    width: 40% ;
-    margin: 0 auto;
+    width: 90%;
     margin-bottom: 30px;
     display:grid;
     place-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
+@media(max-width: 942px){
+    .appHeader{
+        font-size: 25px;
+    }
+    .appGrid{
+        display: block;
+    }
+    .appInfoBx{
+        text-align: center;
+    }
+    .btnBx3{
+        margin: 0 auto;
+    }
+}
+@media(max-width: 598px){
+    .appInfo{
+        min-height: 400px;
+    }
+    .circleImg1{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .appImg{
+        width: 250px;
+        height: 300px;
+    }
+    .planGrid{
+        top: 20px;
+        width: 221px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+
 

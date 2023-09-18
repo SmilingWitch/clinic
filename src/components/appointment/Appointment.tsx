@@ -7,6 +7,7 @@ function Appointment() {
     return (
        <div className="app">
             <div className="appGrid">
+                <div className="background"></div>
                 <div className="appInfo">
                     <div className="appInfoBx">
                         <div className="appHeader">
@@ -19,7 +20,7 @@ function Appointment() {
                             <Button name = "Contact us"/>
                         </div>
                     </div>
-                    <div className="circleImg2"></div>
+                    {/*<div className="circleImg2"></div>*/}
                 </div>
                 <div className="sideImg">
                     <div className="circleImg1">

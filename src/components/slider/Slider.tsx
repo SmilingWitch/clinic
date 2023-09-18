@@ -1,10 +1,5 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import ServiceCard from '../serviceCard/ServiceCard';
-import {BiSolidBrain} from "react-icons/bi"
-import {GiHeartOrgan} from "react-icons/gi"
-import {MdChildFriendly} from "react-icons/md"
-import {BiSolidDonateBlood} from "react-icons/bi"
 import ExpertCard from '../expertCard/ExpertCard';
 
 function Slider() {
@@ -12,8 +7,9 @@ function Slider() {
         <Carousel
   additionalTransfrom={0}
   arrows
+  removeArrowOnDeviceType={["tablet", "mobile"]}
   autoPlaySpeed={4000}
-  centerMode = {false}
+  centerMode 
   className=""
   containerClass="container-with-dots"
   dotListClass=""
@@ -30,7 +26,7 @@ function Slider() {
         max: 3000,
         min: 1024
       },
-      items: 4,
+      items: 3,
       partialVisibilityGutter: 40
     },
     mobile: {
@@ -46,7 +42,7 @@ function Slider() {
         max: 1024,
         min: 464
       },
-      items: 2,
+      items: 1,
       partialVisibilityGutter: 30
     }
   }}

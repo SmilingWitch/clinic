@@ -24,9 +24,10 @@
     position: relative;
     width: 200px;
     height: 250px ;
-    background: var(--blue4);
+    background: var(--blue2T3);
     padding: 10px;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 .plansName{
     position: relative ;

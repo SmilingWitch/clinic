@@ -5,15 +5,17 @@ import AboutUs from './components/aboutUs/AboutUs'
 import Services from './components/services/Services'
 import Expert from './components/expert/Expert'
 import Appointment from './components/appointment/Appointment'
+import Navbar from './components/navbar/Navbar'
+import PrincipalPage from './components/principalPage/PrincipalPage'
+
 
 function App() {
   return (
    <>
-    <Home></Home>
-    <AboutUs></AboutUs>
-    <Services></Services>
-    <Expert/>
-    <Appointment/>
+    <Navbar/>
+    <Router>
+      <Routes path = "/home" element = { <PrincipalPage /> }></Routes><PrincipalPage/>
+    </Router>
    </>
     
 

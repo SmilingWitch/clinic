@@ -22,9 +22,10 @@
 .aboutBx{
     position: relative;
     width: 100% ;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0 auto;
     display: grid;
+    margin-bottom: 20px;
     grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
 }
 .abInfo, .bsImgBx{
@@ -84,7 +85,7 @@
     position: relative;
     width: 350px;
     height: 250px ;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .bsImgBx .img1 img, .img2 img {
     position: relative ;
@@ -99,5 +100,43 @@
     height: 100% ;
     margin: 0 auto;
     
+}
+@media(max-width: 942px){
+    .aboutBx{
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    }
+    .abInfo{
+        width: 100%;
+    }
+    .adInfoS{
+        margin: 0 auto;
+        min-width: 100px;
+    }
+    .abHeader{
+        font-size: 25px;
+    }
+    .adtext, .abHeader{
+        text-align: center;
+        width: 100%;
+    }
+    .btnBx{
+        margin: 0 auto;
+        top: 0px;
+
+    }
+    .adImgS .img1, .img2{
+        margin: 0 auto;
+        
+    }
+    .img1{
+        height: 150px;
+    }
+
+    .adImgS{
+        width: 100%;
+    }
+    .bsImgBx{
+        margin-top: 10px;
+    }
 }
 

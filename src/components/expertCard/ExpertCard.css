@@ -80,3 +80,51 @@
     border-radius: 50%;
     background: white;
 }
+
+@media  (max-width: 1180px){
+    .docCard{
+        width: 200px ;
+        height: 200px;
+        padding: 5px;
+    }
+    .docImg{
+        width: 85px ;
+        height: 85px ;
+    }
+
+    .docInfo{
+        margin-top: 10px;
+    }
+
+    .docName{
+        font-size: 1em;
+    }
+    .docSM a{
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+    }
+}
+@media(max-width: 484px){
+    .docCard{
+        width: 160px ;
+        height: 160px;
+    }
+    .docImg{
+        width: 70px ;
+        height: 70px ;
+    }
+
+    .docName{
+        font-size: 1em;
+    }
+    .docSM{
+        top: 5px;
+    }
+    .docSM a{
+        font-size: 15px;
+        width: 25px;
+        height: 25px;
+    }
+}
+

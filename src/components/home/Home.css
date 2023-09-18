@@ -23,23 +23,25 @@
 
 .home{
     position: relative;
-    width: 100% ;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     background: var(--deepBlue);
     background: linear-gradient(75deg,var(--blue5 ),var(--deepBlue) );
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(600px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
 }
+.infoBx{
+    width: 60%; 
+}
+
 .sideBx{
     position: relative;
     width: 100%;
     display: flex;
     align-items: end ;
     justify-content: center;  
-}
-.infoBx{
-    width: 60%; 
+    height: 100%;
 }
 
 .imgHome{
@@ -60,7 +62,6 @@
     display: flex ;
     align-items: center ;
     justify-content: center;
-
 }
 .infoH{
     position: relative ;
@@ -84,7 +85,8 @@
 .btnBx1{
     position: relative;
     width: 200px ;
-    top: 30px;
+    top: 15px;
+    
 }
 
 .circleBx{
@@ -121,4 +123,48 @@
     height: 300px;
     border-radius: 50% ;
     background: var(--blue2T2); 
+}
+
+@media  (max-width: 1000px){
+    .home{
+        grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    }
+    .infoHeader, .sideBx{
+        margin-top: 80px;
+    }
+
+    .infoHeader{
+        height: 100% ;
+    }
+    .header{
+        font-size: 40px;
+        width: 100%;
+        font-family: 'Anglecia';
+        margin: 0 auto;
+    }  
+    
+}
+
+@media  (max-width: 656px){
+    .header{
+        font-size: 35px;
+        width: 100%;
+        font-family: 'Anglecia';
+        margin: 0 auto;
+        height: 100%;
+    }
+    .infoHeader{
+        position: relative ;
+        width: 90% ;   
+    }
+    .infoBx{
+        width: 90%; 
+        margin: 0 auto;
+    }
+    .infoH{
+        position: relative ;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
 }

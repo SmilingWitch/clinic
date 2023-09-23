@@ -1,4 +1,5 @@
 import Button from "../button/Button";
+import {Link} from "react-router-dom"
 import "./ServiceCard.css"
 
 
@@ -15,7 +16,7 @@ function ServiceCard(props:{ name: string, icon: React.ReactNode; text: string }
                    <p>{props.text}</p> 
                 </div>
                 <div className="btnBx2"> 
-                    <Button name = "Read More"/>
+                   <Link to = "/clinic/services"><Button name = "Read More"/></Link> 
                 </div>
         </div>
     );

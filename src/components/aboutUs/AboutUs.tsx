@@ -1,4 +1,5 @@
 import Button from "../button/Button";
+import {Link} from "react-router-dom"
 import "./AboutUs.css"
 
 function AboutUs() {
@@ -14,7 +15,7 @@ function AboutUs() {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel soluta hic, optio modi dicta, excepturi at amet aperiam aspernatur nihil reiciendis perspiciatis dolor sequi, iusto error adipisci odit vitae nam.</p>
                     </div>
                     <div className="btnBx">
-                        <Button name = "More About Us"/>
+                        <Link to = "/clinic/moreAbout"><Button name = "More About Us"/></Link>
                     </div>
                 </div>
             </div>

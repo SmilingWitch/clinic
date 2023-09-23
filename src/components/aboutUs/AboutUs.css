@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Anglecia';
-    src: url('Anglecia Pro Display SemiBold.ttf') format('truetype'); 
+    src: url('/Anglecia Pro Display SemiBold.ttf') format('truetype'); 
   }
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
@@ -17,6 +17,16 @@
     --blue2T1: rgba(18, 93, 153,0.4);
     --blue2T2: rgba(18, 93, 153,0.3);
     --blue2T3: rgba(18, 93, 153,0.2);
+    --secundaryGray:rgb(183, 182, 185); 
+
+
+    /*--------FONTS SIZE--------*/
+
+    --principalHeader: 50px;
+    --secundaryHeader: 30px;
+
+    --headersubtittle:0.9em;
+    --normalLetter: 0.7em; 
 }
 
 .aboutBx{
@@ -51,16 +61,15 @@
 .abHeader{
     position: relative;
     font-family: 'Anglecia';
-    font-size: 30px;
+    font-size: var(--secundaryHeader);
     width: 80%;
     color: var(--blue5);
 }
 .adtext{
     position: relative;
     width: 80%;
-    font-size: 0.7em;
-    font-weight: lighter;
-    color: var(--blue3);
+    font-size: var(--normalLetter);
+    color: var(--blue2);
     font-family: 'Poppins', sans-serif;
 }
 .btnBx{
@@ -70,6 +79,7 @@
     align-items: center;
     justify-content: start;
     top: 20px;
+    left: 15px;
 }
 
 .bsImgBx{

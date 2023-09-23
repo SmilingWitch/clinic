@@ -1,9 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root{
+    --deepBlue: #1E1B28;
+    --blue1: #6397A3;
+    --blue2: #125D99;
+    --blue3: #67BFDB;
+    --blue4: #EDEEEF;
+    --blue5: rgb(7, 53, 90);
+    --blue6: #49a0bb;
+
+    /*--------TRANSPARENCIAS--------*/
+    --blue2T1: rgba(18, 93, 153,0.4);
+    --blue2T2: rgba(18, 93, 153,0.3);
+    --blue2T3: rgba(18, 93, 153,0.2);
+    --secundaryGray:rgb(183, 182, 185); 
+
+
+    /*--------FONTS SIZE--------*/
+
+    --principalHeader: 50px;
+    --secundaryHeader: 30px;
+
+    --headersubtittle:0.9em;
+    --normalLetter: 0.7em; 
+
+}
+
 .btn{
     position: relative;
     padding: 10px ;
     background: var(--blue6);
     width: 100%;
-    border-radius: 10px;
+    border-radius: var(--normalLetter);
     font-size: 0.7em;
     text-align: center;
     font-family: 'Poppins', sans-serif;

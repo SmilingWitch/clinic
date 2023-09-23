@@ -1,5 +1,6 @@
 import Button from "../button/Button";
 import PlanCard from "../planCard/PlanCard";
+import {Link} from "react-router-dom"
 import "./Appointment.css"
 import {GiNotebook} from "react-icons/gi"
 
@@ -17,10 +18,9 @@ function Appointment() {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dolor odio soluta, repellat doloribus reprehenderit repellendus aperiam sit facilis maxime saepe possimus voluptatum ullam perspiciatis eius nihil mollitia. Omnis, suscipit.</p>
                         </div>
                         <div className="btnBx3">
-                            <Button name = "Contact us"/>
+                            <Link to= "/clinic/appointment"><Button name = "Contact us"/></Link>
                         </div>
                     </div>
-                    {/*<div className="circleImg2"></div>*/}
                 </div>
                 <div className="sideImg">
                     <div className="circleImg1">
@@ -32,7 +32,7 @@ function Appointment() {
             </div>
             <div className="planGrid">
                 <PlanCard btnName = "Make an Appointment" text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit ullam laborum expedita." icon = {<GiNotebook/>} name = "Online Appointment" />
-                <PlanCard btnName = "Make an Appointment" text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit ullam laborum expedita." icon = {<GiNotebook/>} name = "Online Appointment" />
+                {/*<PlanCard btnName = "Make an Appointment" text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit ullam laborum expedita." icon = {<GiNotebook/>} name = "Online Appointment" />*/}
             </div>
        </div> 
     );

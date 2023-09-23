@@ -1,5 +1,6 @@
 import Button from "../button/Button";
 import "./PlanCard.css"
+import {Link} from "react-router-dom"
 
 function PlanCard(props:{icon: React.ReactNode, name: string, text: string, btnName: string}) {
     return (
@@ -15,7 +16,7 @@ function PlanCard(props:{icon: React.ReactNode, name: string, text: string, btnN
                         {props.text}
                     </div>
                     <div className="planBtn">
-                        <Button name = {props.btnName}/>
+                        <Link to = "/clinic/appointment" ><Button name = {props.btnName}/></Link>
                     </div>
                 </div>
             </div>

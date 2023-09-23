@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Anglecia';
-    src: url('Anglecia Pro Display SemiBold.ttf') format('truetype'); 
+    src: url('/Anglecia Pro Display SemiBold.ttf') format('truetype'); 
   }
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
@@ -18,6 +18,18 @@
     --blue2T2: rgba(18, 93, 153,0.3);
     --blue2T3: rgba(18, 93, 153,0.2);
     --blue3T1: rgba(103, 191, 219,0.1);
+    --secundaryGray:rgb(183, 182, 185); 
+
+
+    /*--------FONTS SIZE--------*/
+
+    --principalHeader: 50px;
+    --secundaryHeader: 30px;
+
+    --headersubtittle:0.9em;
+    --normalLetter: 0.7em; 
+
+    --fontCadrHeader:20px;
 }
 
 .plans{
@@ -32,7 +44,7 @@
 .plansName{
     position: relative ;
     font-family: 'Anglecia';
-    font-size: 20px;
+    font-size: var(--fontCadrHeader);
     text-align: center;
     color: var(--blue5);
     margin-top: 20px;
@@ -53,7 +65,7 @@
 .plansText{
     position: relative;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.7em;
+    font-size: var(--normalLetter);
     color: var(--blue2);
     text-align: center;
     margin-top: 20px;
@@ -61,10 +73,12 @@
 
 .planBtn{
     position: relative;
-    width: 150px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     top: 20px;
+    right: 10px;
 }
+

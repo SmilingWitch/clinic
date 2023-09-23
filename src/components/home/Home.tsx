@@ -1,4 +1,5 @@
 import Button from "../button/Button";
+import {Link} from "react-router-dom"
 import "./Home.css"
 
 function Home() {
@@ -13,7 +14,7 @@ function Home() {
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, similique laboriosam. Numquam sed iste quis quisquam, eum ipsa cum a unde minima veniam magnam consequatur. Exercitationem dolor officiis excepturi nam!</p>
                     </div>
                     <div className="btnBx1">
-                        <Button name = "Meet our Employees"/>
+                       <Link to = "/clinic/appointment"><Button name = "Make an Appointment"/></Link> 
                     </div>
                 </div>
             </div>

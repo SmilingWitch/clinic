@@ -6,6 +6,7 @@ import {BiCart} from "react-icons/bi"
 import "./Navbar.css";
 import { BsArrowDownShort } from "react-icons/bs";
 import axios from "axios";
+import {Link, } from "react-router-dom"
 
 
 function Navbar() {
@@ -39,39 +40,48 @@ function Navbar() {
           return <div className =  "log" onClick={SingOut} > Sing Out </div>;
         }
       }*/
-    
-
-    return(
-    <div className="bar">
-        <div className="hamburguerMenu">     
-            <div className="list"> 
-                <ul className= {hMenu === true  ? "Active dropdown" : "notActive dropdown" } >
-                    <li>
-                        <div className="a"> Home</div>  
-                    </li>
-                    <li>
-                        <div className="a" >About</div>
-                    </li>
-                    <li>
-                        <div className="a">Services</div>
-                    </li>
-                    <li>
-                        <div className="a">Programs</div>
-                    </li>
-                    <li>
-                        <div className="a"> Contact us</div>
-                    </li>
-                </ul>
-                <div className="menu" >
-                    <RiMenuLine className="Micon" onClick={() => {setHmenu(!hMenu)}} />
-                </div>
-            </div>
-    </div>
-
-    </div>
-    )
 
 
+      const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
+
+  return (
+    <nav className="navbar">
+      <div  className="brand-name" onClick={closeMenu}>
+        <div className="logo">
+            <img src="[removal.ai]_4ccfff7d-afa8-4ae9-ae72-a664a1635f00-ideogram3.png" alt="" />
+        </div>
+        <span>Medic</span>
+      </div>
+      <button className="hamburger" onClick={toggleMenu}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul className={`navigation-menu ${showMenu ? 'show' : ''}`}>
+        <li>
+           <NavLink to = "/clinic/"  className = {({isActive}) => (isActive ? "a active" : "a")} onClick={closeMenu}>Home</NavLink>  
+        </li>
+        <li>
+            <NavLink to = "/clinic/moreAbout" className="a" onClick={closeMenu}>About</NavLink> 
+        </li>
+        <li>
+           <NavLink to = "/clinic/services" className="a" onClick={closeMenu}>Services</NavLink>
+        </li>
+        <li>
+            <NavLink to = "/clinic/appointment" className="a" onClick={closeMenu}>Contact us</NavLink> 
+        </li>
+      </ul>
+    </nav>
+  );
 }
+
+
 
 export default Navbar ;

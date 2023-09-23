@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: 'Anglecia';
-    src: url('Anglecia Pro Display SemiBold.ttf') format('truetype'); 
+    src: url('/Anglecia Pro Display SemiBold.ttf') format('truetype'); 
   }
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
@@ -87,6 +87,7 @@
     width: 200px ;
     top: 15px;
     
+    
 }
 
 .circleBx{
@@ -141,13 +142,14 @@
         width: 100%;
         font-family: 'Anglecia';
         margin: 0 auto;
+
     }  
     
 }
 
 @media  (max-width: 656px){
+   
     .header{
-        font-size: 35px;
         width: 100%;
         font-family: 'Anglecia';
         margin: 0 auto;
@@ -155,7 +157,7 @@
     }
     .infoHeader{
         position: relative ;
-        width: 90% ;   
+        width: 100% ;   
     }
     .infoBx{
         width: 90%; 
@@ -165,6 +167,15 @@
         position: relative ;
         width: 100%;
         margin: 0 auto;
+        text-align: center;
+        right: 20px;
     }
+    .btnBx1{
+        margin: 0 auto;
+        right: 10px;
+    }
+    
+}
+@media  (max-width: 656px){
     
 }

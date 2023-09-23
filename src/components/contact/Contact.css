@@ -1,0 +1,154 @@
+:root{
+    --deepBlue: #1E1B28;
+    --blue1: #6397A3;
+    --blue2: #125D99;
+    --blue3: #67BFDB;
+    --blue4: #EDEEEF;
+    --blue5: rgb(7, 53, 90);
+    --blue6: #49a0bb;
+
+    /*--------TRANSPARENCIAS--------*/
+    --blue2T1: rgba(18, 93, 153,0.4);
+    --blue2T2: rgba(18, 93, 153,0.3);
+    --blue2T3: rgba(18, 93, 153,0.2);
+    --secundaryGray:rgb(183, 182, 185); 
+
+
+    /*--------FONTS SIZE--------*/
+
+    --principalHeader: 50px;
+    --secundaryHeader: 30px;
+
+    --headersubtittle:0.9em;
+    --normalLetter: 0.7em;
+}
+
+@font-face {
+    font-family: 'Anglecia';
+    src: url('/Anglecia Pro Display SemiBold.ttf') format('truetype'); 
+  }
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+
+
+
+.contact{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+}
+
+.appo{
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Anglecia';
+    font-size: 30px;
+    width: 100%;
+    color: var(--blue5);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Contactinfo{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.Contactinfo p{
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+    font-family: 'Poppins';
+    font-size: 0.8em;
+}
+.form{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+
+}
+.principalInfo{
+    position: relative;
+    display: grid;
+    align-items: center;
+}
+
+.form-control{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: solid 1px transparent;
+    font-family: 'Poppins';
+    font-size: 0.7em;
+    
+    color: var(--deepBlue);
+    border-bottom: 1px solid var(--secundaryGray);
+
+}
+
+.form-control:focus, .form-control:active{
+    border-bottom: solid 2px var(--blue2);
+    outline: none;
+}
+.sintoms .form-control{
+    position: relative;
+    width: 97%;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--secundaryGray);
+    
+}
+.sintoms .form-control:focus, .sintoms .form-control:active{
+    border: solid 2px var(--blue2);
+}
+.bxBtn4{
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.primaryBtn{
+    border: none;
+    position: relative;
+    width: 30%;
+
+}
+.primaryBtn:hover{
+    border: none;
+}
+.bxBtn4 button{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+}
+@media(max-width:748px){
+
+    .form{
+        width: 90%;
+    }
+    .form form{
+        position: relative;
+        width: 100%;
+    }
+    .form-control{
+        width: 250px;
+    }
+    .sintoms{
+        width: 90%;
+    }
+    .sintoms .form-control{
+        width: 100%;
+        left: 5px;
+    }
+}

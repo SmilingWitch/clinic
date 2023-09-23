@@ -55,7 +55,7 @@
 .sCardHeader{
     position: relative ;
     font-family: 'Anglecia';
-    font-size: var(--fontCadrHeader);
+    font-size: 16px;
     text-align: center;
     color: var(--blue5);
     margin-top: 20px;
@@ -83,15 +83,12 @@
 }
 .btnBx2{
     position: relative;
-    width: 80px;
-    top: 20px;
+    width: 100px;
     margin: 0 auto;
     transition: 0.5s;
     display: flex;
     align-items: center;
-    justify-content: center;
-    right: 13px;
-   
+    justify-content: center; 
 }
 
 .sCard:hover .stext {  

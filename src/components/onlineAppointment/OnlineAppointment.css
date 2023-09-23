@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Anglecia';
+    src: url('/Anglecia Pro Display SemiBold.ttf') format('truetype'); 
+  }
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root{
+    --deepBlue: #1E1B28;
+    --blue1: #6397A3;
+    --blue2: #125D99;
+    --blue3: #67BFDB;
+    --blue4: #EDEEEF;
+    --blue5: rgb(7, 53, 90);
+    --blue6: #49a0bb;
+
+    /*--------TRANSPARENCIAS--------*/
+    --blue2T1: rgba(18, 93, 153,0.4);
+    --blue2T2: rgba(18, 93, 153,0.3);
+    --blue2T3: rgba(18, 93, 153,0.2);
+    --secundaryGray:rgb(183, 182, 185); 
+
+
+    /*--------FONTS SIZE--------*/
+
+    --principalHeader: 50px;
+    --secundaryHeader: 30px;
+
+    --headersubtittle:0.9em;
+    --normalLetter: 0.7em; 
+
+}
+
+.online{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background:var(--blue2T3) ;  
+    
+}
+.onlinePresentation{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background:rgba(18, 93, 153,0.5) ;
+}
+.backgroundOnline{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url("AdobeStock_368408883_Preview.jpeg");
+    background-size: cover;
+}
+.onlineAppInfo{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+.onlineHeader{
+   position: relative;
+   width: 80%;
+   height: 60vh;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   margin: 0 auto;
+   border-bottom: 2px solid whitesmoke;
+   font-size: 50px;
+   min-width: 100px;
+   font-family: 'Anglecia';
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.onlineText{
+    position: relative;
+    width: 80%;
+    font-family: 'Poppins';
+    color: white;
+    height: 200px;
+    background: var(--blue2T3);
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1em;
+    text-align: center;
+}
+.InfoBx{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 100%;
+}
+.contBx{
+    position: relative;
+    width: 70%;
+}
+.conInfoBx{
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+    height: 105vh;
+}
+@media(max-width:878px){
+    .backgroundOnline{
+        background-position: right;
+    }
+    .InfoBx{
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display:block;
+        min-height: 200px;
+       
+    }
+    .contBx,.conInfoBx{
+        width: 100%;
+        height: 100%;
+    }
+
+}

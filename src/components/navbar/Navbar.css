@@ -168,7 +168,7 @@ a:link, a:visited {
     justify-content: center;
     align-items: center;
     background: var(--blue2);
-    height:calc(100vh - 80px) ;
+    height:100vh ;
     opacity: 1;
     visibility: visible;
     transition: opacity 0.2s ease-in-out, visibility 0s linear 0.2s, height ease-in-out 0.8s;
